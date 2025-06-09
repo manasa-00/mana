@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(
+                90deg,
+                rgba(255, 0, 0, 0.3),
+                rgba(255, 165, 0, 0.3),
+                rgba(255, 255, 0, 0.3),
+                rgba(0, 128, 0, 0.3),
+                rgba(0, 0, 255, 0.3),
+                rgba(75, 0, 130, 0.3),
+                rgba(238, 130, 238, 0.3)
+            );
+            margin: 0;
+            padding: 20px;
+            color: #000;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 48px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            color: #333;
+            max-width: 700px;
+            margin: 20px auto;
+            text-align: justify;
+        }
+
+        img {
+            width: 500px;
+            height: auto;
+            border-radius: 10px;
+            display: block;
+            margin: 20px auto;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #2e8b57;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #246d48;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Nature</h1>
+
+    <p>
+        Nature can refer to the general realm of living beings, and in some cases to the processes associated with inanimate objects—the way that particular types of things exist and change of their own accord, such as the weather and geology of the Earth. Although humans are part of nature, human activity or humans as a whole are often described as at times at odds, or outright separate and even superior to nature.
+    </p>
+
+    <img src="a.jpg" alt="Nature Image" />
+
+    <p style="text-align: center;">
+        Visit <a href="https://www.wikipedia.org/" target="_blank" rel="noopener noreferrer">Wikipedia</a> to learn more.
+    </p>
+
+    <div class="button-container">
+        <button onclick="showAlert()">Click Me!</button>
+    </div>
+
+    <script>
+        function showAlert() {
+            if (confirm("Do you want to proceed?")) {
+                window.location.href = "cse.html";
+            } else {
+                alert("You clicked NO!");
+            }
+        }
+    </script>
+
+</body>
+</html>

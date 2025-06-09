@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 60px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #ffffffaa;
+        }
+
+        p {
+            font-size: 22px;
+            color: #34495e;
+            max-width: 600px;
+            text-align: center;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            margin-top: 30px;
+            padding: 12px 28px;
+            font-size: 18px;
+            background: linear-gradient(to right, #2e8b57, #3cb371);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        img {
+            width: 200px;
+            margin-top: 20px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Welcome!</h1>
+    <p>You made a great choice. Nature welcomes you to explore more beauty, calm, and color in life.</p>
+
+    <img src="b.jpg" alt="Nature Icon" />
+
+    <button class="btn" onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
